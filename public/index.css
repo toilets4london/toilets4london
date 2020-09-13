@@ -1,5 +1,8 @@
 html {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 *,
@@ -25,34 +28,41 @@ html, body {
   padding: 0;
   text-align: center;
   color: #417471;
-  font-size: 18px;
+  font-size: 21px;
+}
+
+p {
+  margin: 0;
 }
 
 h1 {
   color: #417471;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 .detail-text {
   color: #417471;
   text-align: left;
-  font-size: 18px;
+  font-size: 21px;
+  padding: 10px;
 }
 
 img {
-  margin-left: 15%;
-  margin-right: 15%;
-  width: 70%;
+  width: 100%;
   height: auto;
+  padding: 15px;
 }
 
 [class*="col-"] {
   width: 100%;
   height: 100%;
   float: left;
-  padding: 15px;
 }
 
-@media only screen and (min-width: 480px) {
+
+@media only screen and (min-width: 600px) {
   /* For larger screens: */
   .col-img {
     width: 30%
