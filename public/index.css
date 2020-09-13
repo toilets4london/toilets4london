@@ -16,36 +16,6 @@ html, body {
   font-size: 1rem;
 }
 
-input,textarea {
-  border-style: none;
-  height: 2rem;
-  border-radius: 0.5rem;
-  margin: 0;
-  font-family: 'Cairo', sans-serif;
-  color: #417471;
-  width: 100%;
-}
-
-input {
-  height: 2rem;
-}
-
-textarea {
-  height: 10rem;
-}
-
-button {
-  border-style: none;
-  height: 2rem;
-  border-radius: 0.5rem;
-  width: 90%;
-  margin: 0 5%;
-  font-family: 'Cairo', sans-serif;
-  color: #417471;
-  font-size: 1rem;
-  line-height: 2rem;
-}
-
 .info-page-content {
   padding: 2rem 1rem 1rem 1rem;
   margin: 0;
@@ -84,7 +54,7 @@ h1 {
 
 .contents {
   margin-top: 5rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .footer {
@@ -92,14 +62,14 @@ h1 {
   padding: 0;
   text-align: center;
   color: #417471;
-  height: 2rem;
+  height: 3rem;
   width: 100%;
   z-index: 1;
   position: fixed;
   left: 0;
   bottom: 0;
   vertical-align: middle;
-  line-height: 2rem;
+  line-height: 3rem;
   margin: 0;
   font-size: 5vw;
 }
@@ -110,14 +80,6 @@ h2 {
   line-height: 2rem;
   margin: 1rem 0;
   font-size: 1rem;
-}
-
-.col-label {
-  font-size: 1rem;
-  height: 100%;
-  margin: 0;
-  vertical-align: middle;
-  line-height: 2rem;
 }
 
 .detail-text {
@@ -144,7 +106,6 @@ select {
   position: relative;
   left: 0;
   right: 0;
-
 }
 
 [class*="col-"] {
@@ -161,30 +122,12 @@ select {
   .col-detail {
     width: 75%;
   }
-  .col-label {
-    width:auto;
-  }
-  .col-input {
-    width:50%;
-  }
   h1 {
     font-size: 2rem;
     margin: 1rem 0;
   }
   h2 {
     font-size: 1rem;
-  }
-  .col-label {
-    font-size: 1rem;
-    margin: 1rem 0;
-  }
-  input, textarea {
-    margin: 1rem 5%;
-    width: 90%;
-  }
-  button {
-    margin: 0;
-    width: 6rem;
   }
   .footer {
     font-size: 1rem;
@@ -195,11 +138,6 @@ select {
   content: "";
   clear: both;
   display: table;
-}
-
-.row-form {
-  height: inherit;
-  width: 100%;
 }
 
 .nav {
