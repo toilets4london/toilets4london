@@ -1,15 +1,44 @@
+@font-face {
+  font-family: 'Hind';
+  src: url('fonts/Hind-Light.woff2') format('woff2'),
+       url('fonts/Hind-Light.woff') format('woff'),
+       url('fonts/Hind-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Hind';
+  src: url('fonts/Hind-Medium.woff2') format('woff2'),
+       url('fonts/Hind-Medium.woff') format('woff'),
+       url('fonts/Hind-Medium.ttf') format('truetype');
+  font-weight: bold;
+}
+
+
 html {
   position: relative;
   min-height: 100%;
 }
 
+h2 {
+  background: linear-gradient(119deg, rgba(174, 205, 203, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  display: inline-block;
+  border-radius: 0 2rem 2rem 0;
+  border-width: 0 1rem 0 0;
+  border-color: white;
+  border-style: solid;
+}
+
 html, body {
   background: rgba(174, 205, 203, 1);
-  font-family: 'Cairo', sans-serif;
+  font-family: 'Hind', sans-serif;
   color: #417471;
   font-size: 1rem;
   padding: 0;
   margin: 0;
+}
+
+p {
+  font-size: 1.2rem;
 }
 
 .header {
@@ -29,9 +58,9 @@ html, body {
   vertical-align: middle;
   left: 4.5rem;
   position: fixed;
-  font-size: 1.5rem;
+  font-size: 9vw;
   height: 5rem;
-  font-weight: bolder;
+  font-weight: bold;
   line-height: 5rem;
   width: auto;
 }
@@ -71,21 +100,30 @@ img {
 }
 
 @media only screen and (min-width: 600px) {
-  .footer {
-    font-size: 1rem;
-  }
   img {
-    width: 25%;
+    width: 18%;
     height: auto;
     float: left;
     margin: 0 1rem 1rem 0;
   }
   .imagetext p {
     display: inline;
-    font-size: 2vw;
+    font-size: 2.2vw;
   }
   .imagetext {
     display: table-row;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .footer {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 280px) {
+  .header-text {
+    font-size: 1.5rem;
   }
 }
 
