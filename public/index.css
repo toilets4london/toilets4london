@@ -13,6 +13,18 @@
   font-weight: bold;
 }
 
+@font-face {
+  font-family: 'FredokaOne';
+  src: url('fonts/FredokaOne-Regular.woff2') format('woff2'),
+       url('fonts/FredokaOne-Regular.woff') format('woff'),
+       url('fonts/FredokaOne-Regular.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
 
 html {
   position: relative;
@@ -21,13 +33,13 @@ html {
 
 h2 {
   display: inline-block;
+  font-family: 'FredokaOne', sans-serif;
 }
 
 html, body {
-  background: rgb(119,201,212);
-  background: linear-gradient(45deg, rgba(119,201,212,1) 28%, rgba(87,188,144,1) 100%);
+
   font-family: 'Hind', sans-serif;
-  color: white;
+  color:#4E4D4F;
   font-size: 1rem;
   padding: 0;
   margin: 0;
@@ -38,7 +50,8 @@ p {
 }
 
 .header {
-  background: white;
+  background: rgb(90,185,234);
+  background: linear-gradient(90deg, rgba(90,185,234,1) 0%, rgba(136,96,208,1) 51%, rgba(86,128,233,1) 100%);
   padding: 0;
   height: 5rem;
   position: fixed;
@@ -51,6 +64,7 @@ p {
 
 .header-text {
   vertical-align: middle;
+  font-family: 'FredokaOne', sans-serif;
   left: 4.5rem;
   position: fixed;
   font-size: 9vw;
@@ -58,7 +72,7 @@ p {
   font-weight: bold;
   line-height: 5rem;
   width: auto;
-  color: #015249;
+  color: white;
 }
 
 .contents {
@@ -66,10 +80,11 @@ p {
 }
 
 .footer {
-  background: white;
+  background: rgb(90,185,234);
+  background: linear-gradient(90deg, rgba(90,185,234,1) 0%, rgba(136,96,208,1) 51%, rgba(86,128,233,1) 100%);
   padding: 0;
   text-align: center;
-  color: #015249;
+  color: white;
   height: 3rem;
   width: 100vw;
   z-index: 1;
@@ -87,10 +102,18 @@ img {
   width: 50%;
   margin-left: 25%;
   margin-right: 25%;
-  margin-top: 1rem;
+  animation-name: fadein;
+  animation-duration: 3s;
+}
+
+.image {
+  width: 100%;
   margin-bottom: 1rem;
-  height: auto;
-  object-fit: contain;
+  margin-top: 1rem;
+}
+
+.text {
+  width: 100%;
 }
 
 .imagetext p {
@@ -100,24 +123,36 @@ img {
 @media only screen and (min-width: 1100px) {
   .contents {
     margin: 7.5rem 10vw 4.5rem 10vw;
-    border-spacing: 2rem !important;
   }
   .imagetext p {
-    display: inline;
     font-size: 1.8vw !important;
   }
-  img {
+  .image {
     margin: 0 2rem 0 0 !important;
   }
 }
 
+
 @media only screen and (min-width: 650px) {
-  img {
-    width: 15%;
-    height: auto;
+  .image {
     float: left;
-    margin: 0 1rem 0 0;
+    margin: 0 5% 0 0;
+    display: flex;
+    object-fit: contain;
+    width: 20%;
   }
+  .text {
+    display: flex;
+    width: 75%;
+    align-self: flex-start;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
   .imagetext p {
     display: inline;
     font-size: 2.2vw;
@@ -127,7 +162,8 @@ img {
     width: 100%;
   }
   .contents {
-    border-spacing: 4rem;
+    border-spacing: 2rem;
+    display: table;
   }
 }
 
@@ -137,7 +173,7 @@ img {
   }
 }
 
-@media only screen and (min-width: 280px) {
+@media only screen and (min-width: 290px) {
   .header-text {
     font-size: 2.2rem;
   }
@@ -145,7 +181,8 @@ img {
 
 .nav {
   transition: left 0.5s ease;
-  background: #57BC90;
+  background: rgb(90,185,234);
+  background: linear-gradient(180deg, rgba(90,185,234,1) 0%, rgba(136,96,208,1) 51%, rgba(86,128,233,1) 100%);
   color: white;
   cursor: pointer;
   font-size: 2rem;
@@ -190,6 +227,7 @@ img {
 
 a {
   color: white;
+  font-family: 'FredokaOne', sans-serif;
 }
 
 .nav-toggle .nav-toggle-bar, .nav-toggle .nav-toggle-bar::after, .nav-toggle .nav-toggle-bar::before {
@@ -197,7 +235,7 @@ a {
   top: 50%;
   transform: translateY(-50%);
   transition: all 0.5s ease;
-  background: #57BC90;
+  background: white;
   content: '';
   height: 0.4rem;
   width: 100%;
