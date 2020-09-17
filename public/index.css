@@ -20,18 +20,14 @@ html {
 }
 
 h2 {
-  background: linear-gradient(119deg, rgba(174, 205, 203, 1) 0%, rgba(255, 255, 255, 1) 100%);
   display: inline-block;
-  border-radius: 0 2rem 2rem 0;
-  border-width: 0 1rem 0 0;
-  border-color: white;
-  border-style: solid;
 }
 
 html, body {
-  background: rgba(174, 205, 203, 1);
+  background: rgb(119,201,212);
+  background: linear-gradient(45deg, rgba(119,201,212,1) 28%, rgba(87,188,144,1) 100%);
   font-family: 'Hind', sans-serif;
-  color: #417471;
+  color: white;
   font-size: 1rem;
   padding: 0;
   margin: 0;
@@ -42,8 +38,7 @@ p {
 }
 
 .header {
-  background: rgb(65,116,113);
-  background: linear-gradient(135deg, rgba(65,116,113,1) 38%, rgba(174,205,203,1) 100%);
+  background: white;
   padding: 0;
   height: 5rem;
   position: fixed;
@@ -63,7 +58,7 @@ p {
   font-weight: bold;
   line-height: 5rem;
   width: auto;
-  color: white;
+  color: #015249;
 }
 
 .contents {
@@ -71,10 +66,10 @@ p {
 }
 
 .footer {
-  background: linear-gradient(119deg, rgba(174, 205, 203, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  background: white;
   padding: 0;
   text-align: center;
-  color: #417471;
+  color: #015249;
   height: 3rem;
   width: 100vw;
   z-index: 1;
@@ -95,6 +90,7 @@ img {
   margin-top: 1rem;
   margin-bottom: 1rem;
   height: auto;
+  object-fit: contain;
 }
 
 .imagetext p {
@@ -117,7 +113,7 @@ img {
 
 @media only screen and (min-width: 650px) {
   img {
-    width: 18%;
+    width: 15%;
     height: auto;
     float: left;
     margin: 0 1rem 0 0;
@@ -131,7 +127,7 @@ img {
     width: 100%;
   }
   .contents {
-    border-spacing: 1rem;
+    border-spacing: 4rem;
   }
 }
 
@@ -149,7 +145,7 @@ img {
 
 .nav {
   transition: left 0.5s ease;
-  background: #417471;
+  background: #57BC90;
   color: white;
   cursor: pointer;
   font-size: 2rem;
@@ -164,9 +160,6 @@ img {
 
 .nav.expanded {
   left: 0;
-  border-color: rgba(255, 255, 255, 1);
-  border-width: 0.5rem;
-  border-style: none solid none none;
 }
 
 .nav ul {
@@ -189,7 +182,6 @@ img {
   top: 1.5rem;
   width: 2.5rem;
   z-index: 3;
-  border-radius: 0.4rem;
 }
 
 .nav-toggle:hover {
@@ -205,11 +197,10 @@ a {
   top: 50%;
   transform: translateY(-50%);
   transition: all 0.5s ease;
-  background: white;
+  background: #57BC90;
   content: '';
   height: 0.4rem;
   width: 100%;
-  border-radius: 0.4rem;
 }
 
 .nav-toggle .nav-toggle-bar {
