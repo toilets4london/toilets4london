@@ -32,12 +32,10 @@ html {
 }
 
 h2 {
-  display: inline-block;
   font-family: 'FredokaOne', sans-serif;
 }
 
 html, body {
-
   font-family: 'Hind', sans-serif;
   color:#4E4D4F;
   font-size: 1rem;
@@ -100,15 +98,14 @@ p {
 img {
   display: flex;
   width: 50%;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin: 0 25% 0 25%;
   animation-name: fadein;
   animation-duration: 3s;
 }
 
 .image {
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   margin-top: 1rem;
 }
 
@@ -223,6 +220,11 @@ img {
 
 .nav-toggle:hover {
   opacity: 0.8;
+}
+
+.accent {
+  color: #8860D0;
+  font-weight: bold;
 }
 
 a {

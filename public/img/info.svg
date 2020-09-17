@@ -1,7 +1,7 @@
 <svg width="596" height="598" viewBox="0 0 596 598" fill="none" xmlns="http://www.w3.org/2000/svg">
 <defs>
-      <linearGradient id="Gradient1" x1="0%" y1="0%" x2="0%" y2="100%">
-        <stop class="stop1" offset="0%"/>
+      <linearGradient id="Gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop class="stop2" offset="0%"/>
         <stop class="stop2" offset="50%"/>
 	<stop class="stop4" offset="100%"/>
       </linearGradient>
@@ -9,7 +9,7 @@
         #group1 { fill: url(#Gradient1); }
         .stop1 { stop-color: #5ab9ea; }
         .stop2 { stop-color: #84ceeb; }
-	.stop4 { stop-color: #8860d0; }
+	.stop4 { stop-color: #5680e9;}
       ]]></style>
 </defs>
 <g id="group1">
