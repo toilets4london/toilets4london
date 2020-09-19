@@ -103,6 +103,11 @@ img {
   animation-duration: 3s;
 }
 
+img.chart {
+  width: 100%;
+  margin: auto;
+}
+
 .image {
   width: 100%;
   margin-bottom: 1.5rem;
@@ -148,6 +153,12 @@ img {
     height: 100%;
     margin: 0;
     padding: 0;
+  }
+
+  img.chart {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
   }
 
   .imagetext p {
