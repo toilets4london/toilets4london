@@ -1,3 +1,6 @@
+/* eslint-disable */ 
+const ScrollReveal = require('scrollreveal')
+const anime = require('animejs')
 (function () {
   const win = window
   const doc = document.documentElement
@@ -14,7 +17,6 @@
       interval: 100
     })
     doc.classList.add('anime-ready')
-    /* global anime */
     anime.timeline({
       targets: '.hero-figure-phone'
     }).add({
