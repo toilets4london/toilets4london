@@ -1,5 +1,9 @@
 {
   "name": "toilets4london",
+  "version": "1.0.0",
+  "description": "toilets4london website",
+  "main": "index.html",
+  "dependencies": {},
   "scripts": {
     "clean": "rimraf dist/{css/*,js/*,images/*}",
     "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
@@ -38,5 +42,15 @@
     "stylelint": "^9.4.0",
     "uglify-es": "^3.3.10"
   },
-  "main": ".eslintrc.js"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nrimsky/toilets4london.git"
+  },
+  "author": "Nina Rimsky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nrimsky/toilets4london/issues"
+  },
+  "homepage": "https://github.com/nrimsky/toilets4london#readme"
 }
+
