@@ -1,6 +1,3 @@
-
-const ScrollReveal = require('scrollreveal')
-const anime = require('animejs')
 (function () {
   const win = window
   const doc = document.documentElement
