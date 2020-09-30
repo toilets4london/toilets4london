@@ -2,7 +2,7 @@
   "name": "toilets4london",
   "version": "1.0.0",
   "description": "toilets4london website",
-  "main": "index.html",
+  "main": ".eslintrc.js",
   "dependencies": {},
   "scripts": {
     "clean": "rimraf dist/{css/*,js/*,images/*}",
