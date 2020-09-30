@@ -1,4 +1,4 @@
-/* eslint-disable */ 
+
 const ScrollReveal = require('scrollreveal')
 const anime = require('animejs')
 (function () {
