@@ -79,13 +79,13 @@
         flex: 50%;
     }
 
-    .footer-brand {
+    .footer-brand,
+    .footer-copyright {
         justify-content: flex-start;
     }
 
     .footer-links,
-    .footer-social-links,
-    .footer-copyright {
+    .footer-social-links {
         justify-content: flex-end;
     }
 
