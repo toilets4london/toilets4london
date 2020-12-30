@@ -22,7 +22,9 @@
 .footer-brand,
 .footer-links,
 .footer-social-links,
-.footer-copyright {
+.footer-copyright,
+.footer-privacy {
+    padding-top: 2px;
     flex: none;
     width: 100%;
     display: inline-flex;
@@ -75,13 +77,18 @@
     .footer-brand,
     .footer-links,
     .footer-social-links,
-    .footer-copyright {
+    .footer-copyright,
+    .footer-privacy {
         flex: 50%;
     }
 
     .footer-brand,
     .footer-copyright {
         justify-content: flex-start;
+    }
+
+    .footer-privacy {
+        justify-content: flex-end;
     }
 
     .footer-links,
