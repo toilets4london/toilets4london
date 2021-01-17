@@ -44,11 +44,13 @@
 		max-width: 280px;
 		margin-left: auto;
 		margin-right: auto;
+		margin-bottom: 16px;
+		
 
 		.button {
 			display: flex;
 
-			+ .button {
+			&:nth-child(2) {
 				margin-top: 16px;
 			}
 		}
@@ -80,7 +82,7 @@
 
 	.hero {
 		text-align: center;
-		padding-top: 36px;
+		padding-top: 0;
 		padding-bottom: 16px;
 	}
 	
@@ -90,9 +92,9 @@
 @include media( '>medium' ) {
 
 	.hero-figure-stars {
-		left: -10vw;
+		left: -6vw;
 		img {
-			width: 200px;
+			width: 160px;
 		}
 	}
 
@@ -110,13 +112,13 @@
 	}
 
     .hero-copy {
-		padding-right: 64px;
-        min-width: 552px;
-        width: 552px;
+		padding-right: 40px;
+        min-width: 545px;
+        width: 545px;
     }
 
 	.hero-cta {
-		margin: 0;
+		margin: 0 0 16px 0;
 
 		.button {
 			min-width: 170px;
@@ -131,7 +133,9 @@
 		img {
 			display: inline-block;
 			position: relative;
-			width: 200px;
+			width: 160px;
+			height: auto;
+			margin-left: 15px;
 		}
 	}
 }

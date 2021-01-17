@@ -36,9 +36,7 @@
         background-color: color(bg, 2);
         border-color: color(bg, 2);
     }
-}
 
-.input {
     -moz-appearance: none;
     -webkit-appearance: none;
     @include font-size(7, mobile, true, false, true);
@@ -49,8 +47,13 @@
     }
     line-height: 20px;
     padding: 13px 16px;
-	height: 48px;
     box-shadow: none;
+}
+
+.input {
+
+	height: 48px;
+
 
     .inline-input {
         display: inline;
