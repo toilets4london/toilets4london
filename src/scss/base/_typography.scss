@@ -44,18 +44,10 @@ h1,
 	}
 }
 
-h2,
-.h2 {
-	@include font-size(2, mobile, true, true, true);
-	@if ( get-font-size(2, desktop) != get-font-size(2, mobile) ) {
-		@include media( '>medium' ) {
-			@include font-size(2, desktop, true, true, true);
-		}
-	}
-}
 
-h3,
-.h3,
+
+h2,
+.h2,
 blockquote {
 	@include font-size(3, mobile, true, true, true);
 	@if ( get-font-size(3, desktop) != get-font-size(3, mobile) ) {
@@ -65,6 +57,8 @@ blockquote {
 	}
 }
 
+h3,
+.h3,
 h4,
 h5,
 h6,
@@ -134,19 +128,19 @@ h6,
 	}
 }
 
-h1, h2,
-.h1, .h2 {
+h1, 
+.h1 {
 	margin-top: 48px;
 	margin-bottom: 16px;
 }
 
-h3,
-.h3 {
+h2,
+.h2 {
 	margin-top: 36px;
 	margin-bottom: 12px;
 }
 
-h4, h5, h6,
+h3, .h3, h4, h5, h6,
 .h4, .h5, .h6 {
 	margin-top: 24px;
 	margin-bottom: 4px;

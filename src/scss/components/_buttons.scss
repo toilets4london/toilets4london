@@ -62,5 +62,13 @@
 	.button-wide-mobile {
 		width: 100%;
 		max-width: 280px;
-	}
+    }
+}
+
+.app-store-button {
+    display: inline-flex;
+    img {
+        height: 50px;
+        width: auto;
+    }
 }

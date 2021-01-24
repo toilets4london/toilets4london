@@ -23,11 +23,13 @@
 .footer-links,
 .footer-social-links,
 .footer-copyright,
-.footer-privacy {
+.footer-privacy,
+.footer-legal {
     padding-top: 2px;
     flex: none;
     width: 100%;
     display: inline-flex;
+    text-align: center;
     justify-content: center;
 }
 
@@ -35,6 +37,11 @@
 .footer-links,
 .footer-social-links {
     margin-bottom: 24px;
+}
+
+.footer-legal {
+    font-size: 0.8em;
+    line-height: 1.1em;
 }
 
 .footer-social-links {
@@ -70,8 +77,8 @@
 
     .site-footer-inner {
         justify-content: space-between;
-		padding-top: 64px;
-		padding-bottom: 64px;
+		padding-top: 48px;
+		padding-bottom: 48px;
     }
 
     .footer-brand,
@@ -84,6 +91,10 @@
 
     .footer-brand,
     .footer-copyright {
+        justify-content: flex-start;
+    }
+
+    .footer-legal {
         justify-content: flex-start;
     }
 

@@ -1,12 +1,13 @@
-.input,
-.textarea {
+input,
+select,
+textarea {
     display: block;
     background-color: color(typography, 1);
     border-width: 1px;
     border-style: solid;
     border-color: color(bg, 3);
 	border-radius: 2px;
-    color: color(typography, 2);
+    color: color(typography, 3);
     width: 100%;
 
     &::placeholder {
@@ -50,7 +51,7 @@
     box-shadow: none;
 }
 
-.input {
+input {
 
 	height: 48px;
 
@@ -60,7 +61,7 @@
     }
 }
 
-.textarea {
+textarea {
     display: block;
     resize: vertical;
 
@@ -80,15 +81,16 @@
 }
 
 @include media( '>medium' ) {
-    .form {
+    form {
         display: inline-block;
         text-align: left;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .input,
-    .textarea {
+    input,
+    select,
+    textarea {
         max-width: 600px;
         width: 80vw;
     }
