@@ -44,6 +44,11 @@
 	padding-bottom: 16px;
 }
 .hero {
+	h1 {
+		font-family: 'milkie_wylkieregular', 'sans-serif';
+		color: color(typography, 1);
+	}
+
 	&-cta {
 		margin-left: auto;
 		margin-right: auto;
@@ -58,6 +63,7 @@
 	&-copy {
 		position: relative; /* To display elements above hero illustrations */
 		z-index: 1;
+		color: color(typography, 2);
 	}
 }
 

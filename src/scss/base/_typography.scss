@@ -8,7 +8,7 @@ html {
 }
 
 body {
-	color: color(typography, 2);
+	color: color(typography, 3);
 	font-size: 1rem;
 }
 
@@ -24,13 +24,20 @@ a {
 	@include anchor-aspect(main);
 }
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-	clear: both;
-	color: color(typography, 1);
+h1, h2, .h1, .h2 {
+	font-family: 'milkie_wylkieregular', 'sans-serif';
+}
+
+h3, h4, h5, h6, .h3, .h4, .h5, .h6 {
 	@if ( get-font-family(heading) != get-font-family(base) ) {
 		@include font-family(heading);
 	}
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	clear: both;
+	color: color(typography, 3);
 	@include font-weight(semibold);
 }
 
@@ -47,8 +54,7 @@ h1,
 
 
 h2,
-.h2,
-blockquote {
+.h2 {
 	@include font-size(3, mobile, true, true, true);
 	@if ( get-font-size(3, desktop) != get-font-size(3, mobile) ) {
 		@include media( '>medium' ) {
@@ -56,6 +62,17 @@ blockquote {
 		}
 	}
 }
+
+
+blockquote {
+	@include font-size(4, mobile, true, true, true);
+	@if ( get-font-size(4, desktop) != get-font-size(4, mobile) ) {
+		@include media( '>medium' ) {
+			@include font-size(4, desktop, true, true, true);
+		}
+	}
+}
+
 
 h3,
 .h3,
