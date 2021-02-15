@@ -28,6 +28,11 @@
     width: 380px;
     max-width: 380px;
     flex-grow: 1;
+
+    img {
+        height: 140px;
+        width: auto;
+    }
 }
 
 .feature-inner {
@@ -43,6 +48,17 @@
 .feature-icon {
 	display: flex;
     justify-content: center;
+}
+
+.find-me-a-loo {
+    width: 100%;
+    display: block;
+    img {
+        width: 70%;
+        margin: auto;
+        max-width: 200px;
+        height: auto;
+    }
 }
 
 @include media( '>medium' ) {

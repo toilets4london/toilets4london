@@ -3,6 +3,7 @@
 // Usage example: color(primary, main)
 // --------------------------------------------
 @font-face {
+	font-display: fallback;
 	font-family: 'milkie_wylkieregular';
 	src: 
 		url('../fonts/milkiewylkie-webfont.woff') format('woff'), 
