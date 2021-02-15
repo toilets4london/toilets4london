@@ -10,9 +10,10 @@
     line-height: 24px;
     text-decoration: none !important;
 	text-transform: uppercase;
-    background-color: color(bg, 3);
-    color: color(typography, 1) !important;
-    border: none;
+    background-color: lighten($red, 5%);
+    color: $white !important;
+    border-style: solid;
+    border-color: $white;
     border-radius: 2px;
     cursor: pointer;
     justify-content: center;
@@ -21,7 +22,7 @@
     white-space: nowrap;
 
 	&:hover {
-		background: lighten(color(bg, 3), 5%);
+		background: lighten($red, 10%);
 	}
 
     &:active {
@@ -38,15 +39,6 @@
 	height: 32px;
 }
 
-.button-primary {
-	background: mix(color(primary, 1), color(primary, 2));
-    background: linear-gradient(65deg, color(primary, 1) 0, color(primary, 2) 100%);
-
-    &:hover {
-		background: lighten(mix(color(primary, 1), color(primary, 2)), 5%);
-        background: linear-gradient(50deg, lighten(color(primary, 1), 5%) 0, lighten(color(primary, 2), 2%) 100%);
-    }
-}
 
 .button-block {
     display: flex;

@@ -9,25 +9,12 @@
 		url('../fonts/milkiewylkie-webfont.woff2') format('woff2');
 }
 
-$color: (
-	typography: (
- 		1: #FFFFFF,
- 		2:#FFFFFF,
- 		3: #000000
- 	),
- 	bg: (
- 		1:#ED4537, 
- 		2: #000000,
- 		3: #000000,
- 		4: #000000
- 	),
-	primary: (
-		1: #ED4537,
-		2: #E38BA3,
-		3: #95DEC2,
-		4: #FEE459
- 	)
-);
+$white:  #FFFFFF;
+$black: #000000;
+$red: #ED4537;
+$pink:  #E38BA3;
+$aqua: #95DEC2;
+$yellow:  #FEE459;
 
 // --------------------------------------------
 // Typography ---------------------------------
@@ -43,8 +30,8 @@ $font__family: (
 $font__sizes: (
 	alpha:   ( 64px, 68px, 3px ),    // font-size, line-height, kerning (use '0' if don't want to output any kerning)
 	beta:    ( 56x, 60px, 2px ),
-	gamma:   ( 48px, 52px, 1px ),
-	delta:   ( 40px, 44px, 0px ),
+	gamma:   ( 44px, 52px, 1px ),
+	delta:   ( 36px, 44px, 0px ),
 	epsilon: ( 20px, 30px, -0.1px ),
 	zeta:    ( 18px, 28px, -0.1px ),
 	eta:     ( 16px, 24px, -0.1px ),
@@ -88,5 +75,6 @@ $content__padding: (
 	mobile: 16px,
 	desktop:  24px
 );
+
 $container__width: 1080px;
 $container__width-sm: 800px;

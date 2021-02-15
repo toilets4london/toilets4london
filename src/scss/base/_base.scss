@@ -9,16 +9,9 @@ html {
 }
 
 body {
-	background: color(bg, 2); /* Fallback for when there is no custom background color defined. */
+	background: $white; /* Fallback for when there is no custom background color defined. */
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
-}
-
-hr {
-	border: 0;
-	@include divider();
-	margin-top: 24px;
-	margin-bottom: 24px;
 }
 
 ul, ol {
@@ -71,32 +64,4 @@ figcaption {
 img,
 svg {
 	display: block;
-}
-
-// tables
-table {
-	border-collapse: collapse;
-	margin-bottom: 24px;
-	width: 100%;
-}
-
-tr {
-	border-bottom: 1px solid color(bg, 3);
-}
-
-th {
-	text-align: left;
-}
-
-th,
-td {
-	padding: 10px 16px;
-
-	&:first-child {
-		padding-left: 0;
-	}
-
-	&:last-child {
-		padding-right: 0;
-	}
 }

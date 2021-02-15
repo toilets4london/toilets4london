@@ -2,40 +2,40 @@ input,
 select,
 textarea {
     display: block;
-    background-color: color(typography, 1);
+    background-color: $white;
     border-width: 1px;
     border-style: solid;
-    border-color: color(bg, 3);
+    border-color: $yellow;
 	border-radius: 2px;
-    color: color(typography, 3);
+    color: $black;
     width: 100%;
 
     &::placeholder {
-        color: color(typography, 3);
+        color: $black;
     }
 
     &::-ms-input-placeholder {
-        color: color(typography, 3);
+        color: $black;
     }
 
     &:-ms-input-placeholder {
-        color: color(typography, 3);
+        color: $black;
     }
 
     &:hover {
-        border-color: darken(color(bg, 3), 5%);
+        border-color: darken($yellow, 5%);
     }
 
     &:active,
     &:focus {
         outline: none;
-        border-color: color(bg, 3);
+        border-color: $yellow;
     }
 
     &[disabled] {
         cursor: not-allowed;
-        background-color: color(bg, 2);
-        border-color: color(bg, 2);
+        background-color: $white;
+        border-color: $yellow;
     }
 
     -moz-appearance: none;
@@ -114,8 +114,3 @@ textarea {
     }
 }
 
-#contact {
-    p, h1, h2, h3, a {
-        color: color(typography, 1);
-    }
-}
