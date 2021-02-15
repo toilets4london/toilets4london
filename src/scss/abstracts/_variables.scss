@@ -12,11 +12,11 @@
 $color: (
 	typography: (
  		1: #FFFFFF,
- 		2: #8A94A7,
+ 		2:#FFFFFF,
  		3: #000000
  	),
  	bg: (
- 		1: #95DEC2, 
+ 		1:#ED4537, 
  		2: #000000,
  		3: #000000,
  		4: #000000
@@ -41,10 +41,10 @@ $font__family: (
 );
 
 $font__sizes: (
-	alpha:   ( 48px, 58px, 3px ),    // font-size, line-height, kerning (use '0' if don't want to output any kerning)
-	beta:    ( 42px, 52px, 2px ),
-	gamma:   ( 36px, 46px, 1px ),
-	delta:   ( 24px, 34px, 0px ),
+	alpha:   ( 64px, 68px, 3px ),    // font-size, line-height, kerning (use '0' if don't want to output any kerning)
+	beta:    ( 56x, 60px, 2px ),
+	gamma:   ( 48px, 52px, 1px ),
+	delta:   ( 40px, 44px, 0px ),
 	epsilon: ( 20px, 30px, -0.1px ),
 	zeta:    ( 18px, 28px, -0.1px ),
 	eta:     ( 16px, 24px, -0.1px ),

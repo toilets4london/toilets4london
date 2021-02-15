@@ -4,40 +4,20 @@
 	img {
 		display: inline;
 	}
-	&-phone {
+	&-phew {
 		display: flex;
 		flex-direction: column;
 		width: 100%;
 		height: 100%;
 		img {
 			height: auto;
-			max-height: 300px;
+			width: 80%;
 			z-index: 2;
-			flex: 2;
-			top: 0;
-			&::before {
-				content: '';
-				position: absolute;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				right: 0;
-				transform-origin: 100% 100%;
-			}
-
-		}
-	}
-	&-stars {
-		position: absolute;
-		top: -3vh;
-		left: 0px;
-		img {
-			height: auto;
-			z-index: 1;
-			width: 130px;
+			margin: auto;
 		}
 	}
 }
+
 .hero {
 	text-align: center;
 	padding-top: 0;
@@ -76,11 +56,11 @@
 				width: 160px;
 			}
 		}
-		&-phone {
+		&-phew {
 			img {
 				display: inline-block;
 				position: relative;
-				width: 160px;
+				width: 500px;
 				height: auto;
 				margin-left: 15px;
 			}

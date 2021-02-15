@@ -24,11 +24,11 @@ a {
 	@include anchor-aspect(main);
 }
 
-h1, h2, .h1, .h2 {
+h1, h2, .h1, .h2, h3, .h3 {
 	font-family: 'milkie_wylkieregular', 'sans-serif';
 }
 
-h3, h4, h5, h6, .h3, .h4, .h5, .h6 {
+h4, h5, h6, .h3, .h4, .h5, .h6 {
 	@if ( get-font-family(heading) != get-font-family(base) ) {
 		@include font-family(heading);
 	}
