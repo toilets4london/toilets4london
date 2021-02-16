@@ -39,17 +39,16 @@
 		position: relative; /* To display elements above hero illustrations */
 		z-index: 1;
 	}
+	&-paragraph {
+		font-size: 1.3rem;
+		line-height: 2rem;
+		padding-bottom: 1rem;
+	}
 }
 
 @include media( '>medium' ) {
 
 	.hero-figure {
-		&-stars {
-			left: -6vw;
-			img {
-				width: 160px;
-			}
-		}
 		&-phew {
 			img {
 				display: inline-block;

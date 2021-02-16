@@ -3,10 +3,9 @@ select,
 textarea {
     display: block;
     background-color: $white;
-    border-width: 1px;
+    border-width: 4px;
     border-style: solid;
     border-color: $yellow;
-	border-radius: 2px;
     color: $black;
     width: 100%;
 
@@ -40,12 +39,6 @@ textarea {
 
     -moz-appearance: none;
     -webkit-appearance: none;
-    @include font-size(7, mobile, true, false, true);
-    @if ( get-font-size(7, desktop) != get-font-size(7, mobile) ) {
-        @include media( '>medium' ) {
-            @include font-size(7, desktop, true, false, true);
-        }
-    }
     line-height: 20px;
     padding: 13px 16px;
     box-shadow: none;
