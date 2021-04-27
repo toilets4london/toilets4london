@@ -28,13 +28,19 @@
 
 .card {
     height: 100%;
-    img {
-        max-width: 100px;
-        height: auto;
-        margin: auto;
+    .card-header {
+        img {
+            height: 40px;
+            width: auto;
+            display: block;
+            padding-left: auto;
+        }
     }
-    .card-title {
-        padding-bottom: 18px;
+    .card-body {
+        p {
+            padding: 0;
+            margin: 0;
+        }
     }
 }
 
@@ -50,10 +56,16 @@
 
 .support-img {
     max-width: 100%;
+    display: block;
 }
 
 @media (min-width: 768px) { 
     .bg-md-light {
         background-color: $light;
     }
+}
+
+.bg-grad {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(0,122,255,1) 140%);
 }
