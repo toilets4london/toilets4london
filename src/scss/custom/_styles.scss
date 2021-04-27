@@ -1,0 +1,71 @@
+// Your custom variables
+.btn-insta {
+    color: #ac2bac; 
+    border-color: lighten(#ac2bac, 20); 
+}
+
+.btn-facebook {
+    color: #3b5998; 
+    border-color: lighten(#3b5998, 20); 
+}
+
+.btn-github {
+    color: #333333; 
+    border-color: lighten(#333333, 20); 
+}
+
+.btn-linkedin {
+    color: #0082ca; 
+    border-color: lighten(#0082ca, 20); 
+}
+
+.btn-twitter {
+    color: #55acee; 
+    border-color: lighten(#55acee, 20); 
+}
+
+
+
+.card {
+    height: 100%;
+    .card-header {
+        img {
+            height: 40px;
+            width: auto;
+            display: block;
+            padding-left: auto;
+        }
+    }
+    .card-body {
+        p {
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+
+.form-card {
+    max-width: 600px;
+    margin: auto;
+}
+
+.app-button {
+    width: auto;
+    height: 40px;
+}
+
+.support-img {
+    max-width: 100%;
+    display: block;
+}
+
+@media (min-width: 768px) { 
+    .bg-md-light {
+        background-color: $light;
+    }
+}
+
+.bg-grad {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(0,122,255,1) 140%);
+}

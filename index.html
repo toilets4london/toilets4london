@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -14,281 +14,240 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="Description"
         content="Toilets4London is developing smart solutions to improve the provision of toilets in London. Winners of 2020 Mayor's Entrepreneur Award.">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cbd6f53d01.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preload" href="dist/css/style.css" as="style" crossorigin="anonymous" />
     <link rel="stylesheet" href="dist/css/style.css">
-    <script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
-<body class="is-boxed has-animations">
+<body>
     <!-- Hi there! You're looking at the source code of this website : ) If you fancy contributing your skills
      to the Toilets4London project and helping us make London a healthier and more accessible city, please 
      reach out to me at nina@toilets4london.com. Have a nice day! -->
-    <div class="body-wrap">
-        <header class="site-header">
-            <div class="container">
-                <div class="site-header-inner">
-                    <div class="brand header-brand">
-                        <h1 class="m-0">
-                            <a href="#">
-                                <img class="header-logo-image" src="dist/images/logo.svg" alt="Toilets4London logo">
-                            </a>
-                        </h1>
-                    </div>
+    <div>
+        <header id="start">
+            <nav class="navbar mb-3 navbar-dark bg-primary">
+                <div class="container">
+                    <a class="navbar-brand text-bold font-weight-bold" href="#start">
+                        <img src="dist/images/logo-white.svg" height="30" alt="Toilets4London logo" loading="lazy" /> Toilets4London
+                    </a>
                 </div>
-            </div>
+            </nav>
         </header>
 
-        <main>
-            <section class="hero">
-                <div class="container">
-                    <div class="hero-inner">
-                        <div class="hero-copy">
-                            <h1 class="hero-title mt-0">Toilets4London</h1>
-                            <p class="hero-paragraph">Toilets4London is an app and city wide scheme aiming to improve access to toilets in London and break the loo taboo!</p>
-                            <div class="hero-cta">
-                                <a href="https://apps.apple.com/us/app/toilets4london/id1543000174" class="app-store-button ios"><img src="dist/images/ios-app-store-badge.svg" alt="Download on the app store"></a>
-                                <a href='https://play.google.com/store/apps/details?id=com.toilets4london.toiletapp' class="app-store-button"><img alt='Get it on Google Play' src='dist/images/google-play-badge-1.png'/></a>
+        <main class="container">
+            <section>
+                <div class="p-3 p-md-5 text-left my-4 bg-md-light">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h1 class="mb-4 h2">Toilets4London is improving access to toilets in London using technology and open data</h1>
+                            <h2 class="mb-4 h5 text-primary"><i class="fas fa-award me-1"></i> Winners of 2020 Mayor's Entrepreneur Tech Award</h2>
+                            <div class="d-block">
+                                <a class="btn btn-primary mb-4 btn-lg btn-rounded" href="#contact" role="button">Get involved!</a>
                             </div>
-                            <div class="hero-cta">
-                                <a class="button button-primary" href="#contact">Get involved</a>
-                            </div>
+                            <a href="https://apps.apple.com/us/app/toilets4london/id1543000174"><img
+                                    src="dist/images/ios-app-store-badge.svg" alt="Download on the app store"
+                                    class="app-button mt-1"></a>
+                            <a href='https://play.google.com/store/apps/details?id=com.toilets4london.toiletapp'><img
+                                    alt='Get it on Google Play' src='dist/images/google-play-badge-1.png'
+                                    class="app-button mt-1" /></a>
                         </div>
-                        <div class="hero-figure anime-element">
-                            <div class="hero-figure-stars">
-                                <img src="dist/images/stars.svg" alt="Stars">
-                            </div>
-                            <div class="hero-figure-phone">
-                                <img src="dist/images/phonescreen.svg" alt="Phone screen image">
+                        <div class="col-lg-6 mt-4 my-lg-0">
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.youtube.com/embed/1NmRqsnBOn0?rel=0&cc_load_policy=1" title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
-            <section class="features section">
-                <div class="container">
-                    <div class="features-inner section-inner has-bottom-divider">
-                        <h2 class="features-title has-top-divider">What we do</h2>
-                        <div class="features-wrap">
-                            <div class="feature text-center is-revealing">
-                                <div class="feature-inner">
-                                    <div class="feature-icon">
-                                        <img src="dist/images/feature-icon-04.svg" alt="Phone screen icon">
-                                    </div>
-                                    <h3 class="feature-title mt-24">Leveraging technology and building great apps</h3>
-                                    <p class="text-sm mb-0">Our free <a href="https://play.google.com/store/apps/details?id=com.toilets4london.toiletapp">Android</a> 
-                                        and <a href="https://apps.apple.com/us/app/toilets4london/id1543000174">iOS</a>
-                                        apps enable you to locate London
-                                        toilets, view accurate and up-to-date information, and contribute to improving
-                                        toilet facilities all over the city. You can also access our data using the <a href="https://londontoiletmap.netlify.app/">London toilets web app</a>.</p>
-                                </div>
+            <section>
+                <div class="row">
+                    <div data-aos="fade-up" class="col-lg-6 my-3">
+                        <div class="card m-2">
+                            <div class="card-header">
+                                <img src="dist/images/star.svg" alt=" Star icon">
+                                <h3 class="pt-3 h4">5 star app for all your toilet-finding needs</h3>
                             </div>
-                            <div class="feature text-center is-revealing">
-                                <div class="feature-inner">
-                                    <div class="feature-icon">
-                                        <img src="dist/images/feature-icon-01.svg" alt="Map pin icon">
-                                    </div>
-                                    <h3 class="feature-title mt-24">Mapping London's public toilets</h3>
-                                    <p class="text-sm mb-0">Toilets4London gets toilet data directly from councils and community organisations. We are collecting and maintaining a high quality database of toilet locations in London.</p>
-                                </div>
+                            <div class="card-body">
+                                <p>Our free <a
+                                        href="https://play.google.com/store/apps/details?id=com.toilets4london.toiletapp">Android</a>
+                                    and <a href="https://apps.apple.com/us/app/toilets4london/id1543000174">iOS</a>
+                                    apps enable you to find toilets near you, view up-to-date detailed information,
+                                    suggest changes to the data which get reviewed in under 24hrs, submit toilet ratings
+                                    and suggest new toilet locations. You
+                                    can also access our data using the <a
+                                        href="https://londontoiletmap.netlify.app/">London toilets web app</a>. Our apps
+                                    never have ads and never collect any user data or track you.</p>
                             </div>
-                            <div class="feature text-center is-revealing">
-                                <div class="feature-inner">
-                                    <div class="feature-icon">
-                                        <img src="dist/images/feature-icon-03.svg"
-                                            alt="Clock, disabled, baby change and information icons">
-                                    </div>
-                                    <h3 class="feature-title mt-24">Collecting accurate data on the things that matter
-                                    </h3>
-                                    <p class="text-sm mb-0">Toilets4London collects data on disabled accessibility,
-                                        opening hours and baby change facilities so that you know exactly what is
-                                        available.</p>
-                                </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" class="col-lg-6 my-3">
+                        <div class="card m-2">
+                            <div class="card-header">
+                                <img src="dist/images/locate.svg" alt="Location icon">
+                                <h3 class="pt-3 h4">We make it easy to share toilet data</h3>
                             </div>
-                            <div class="feature text-center is-revealing">
-                                <div class="feature-inner">
-                                    <div class="feature-icon">
-                                        <img src="dist/images/feature-icon-02.svg" alt="Add new toilets icon">
-                                    </div>
-                                    <h3 class="feature-title mt-24">Getting more businesses to open up their toilets
-                                    </h3>
-                                    <p class="text-sm mb-0">Toilets4London aims to encourage more cafés, pubs and
-                                        restaurants to open
-                                        their toilets to the public, leading a city-wide scheme to break the taboo and
-                                        emphasise the importance of toilets in the urban environment.</p>
-                                </div>
+                            <div class="card-body">
+                                <p>We write custom web scraping scripts that extract toilet data directly from reliable
+                                    sources. As a organisation that manages
+                                    toilets, nothing changes for you, while Toilets4London works behind the scenes to
+                                    turn your data into a user-friendly useful mobile app. <a href="#contact">Get in
+                                        touch with us today</a> if you'd like us to pull data from your website, or any
+                                    other source (google sheets/maps, excel etc.)! We also provide community toilet scheme managers with metrics on toilet ratings and reports submitted by app users.</p>
                             </div>
-                            <div class="feature text-center is-revealing">
-                                <div class="feature-inner">
-                                    <div class="feature-icon">
-                                        <img src="dist/images/feature-icon-05.svg" alt="Open data logo">
-                                    </div>
-                                    <h3 class="feature-title mt-24">Supporting the Open Data initiative</h3>
-                                    <p class="text-sm mb-0">Toilets4London's vision is for the latest data on public
-                                        services to be openly accessible. We endeavour to make it easier for local
-                                        authorities to keep updated public toilet data in the public domain.</p>
-                                </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" class="col-lg-6 my-3">
+                        <div class="card m-2">
+                            <div class="card-header">
+                                <img src="dist/images/info.svg" alt="Information icon">
+                                <h3 class="pt-3 h4">Accurate info on the things that matter</h3>
                             </div>
-                            <div class="feature text-center is-revealing">
-                                <div class="feature-inner">
-                                    <div class="feature-icon">
-                                        <img src="dist/images/feature-icon-06.svg" alt="Working together icon">
-                                    </div>
-                                    <h3 class="feature-title mt-24">Working together</h3>
-                                    <p class="text-sm mb-0">By engaging with the public and private sectors,
-                                        Toilets4London is working to make London a trailblazing city in the provision of
-                                        toilet facilities. We won the <a
-                                            href="https://www.mayorsfundforlondon.org.uk/news/meet-the-entrepreneurs/">2020
-                                            Mayor's Entrepreneur Smart Cities Award</a> and are working closely with the
-                                        Greater London Authority.</p>
-                                </div>
+                            <div class="card-body">
+                                <p>Toilets4London collects data on accessibility,
+                                    opening hours, baby change facilities and more so that you know exactly what is
+                                    available. We regularly re-scrape and refresh the data, relying on
+                                    direct links with facility providers, which means more
+                                    up-to-date and accurate info for our users!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" class="col-lg-6 my-3">
+                        <div class="card m-2">
+                            <div class="card-header">
+                                <img src="dist/images/toilet_map_pin.svg" alt="Map pin icon">
+                                <h3 class="pt-3 h4">Join the Toilets4London Toilet Scheme</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>If you are a local business, opening up your toilet to the public is the best way to
+                                    show that you care about improving the local area and be perceived as a brand that
+                                    helps when
+                                    it’s most needed. Businesses can <a href="#contact">join the Toilets4London toilet
+                                        scheme</a> and appear on our app
+                                    today.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="statistics">
-                <div class="container">
-                    <div class="section-inner has-bottom-divider">
-                        <blockquote
-                            cite="https://www.rsph.org.uk/static/uploaded/459f4802-ae43-40b8-b5a006f6ead373e6.pdf">
-                            Three in four of the UK public think there are not enough public toilets in their area.
-                            <br />
-                            Knowledge of lack of facilities nearby acts as a ‘loo leash’, deterring as many as one
-                            in five (20%) from venturing out of their homes as often as they would like. This rises
-                            to over two in five (43%) among those with medical conditions requiring frequent
-                            toilet use.
-                        </blockquote>
-                        <p class="ml-24"><a
-                                href="https://www.rsph.org.uk/static/uploaded/459f4802-ae43-40b8-b5a006f6ead373e6.pdf">2018
-                                Survey - Royal Society For Public Health</a></p>
+            <section>
+                <div class="mt-4 p-3 p-md-5 text-muted">
 
-                    </div>
+                    <blockquote cite="https://www.rsph.org.uk/static/uploaded/459f4802-ae43-40b8-b5a006f6ead373e6.pdf"
+                        class="font-italic h4"><i class="fas fa-toilet-paper-slash"></i>
+                        Three in four of the UK public think there are not enough public toilets in their area.
+                        Knowledge of lack of facilities nearby acts as a ‘loo leash’, deterring as many as one
+                        in five (20%) from venturing out of their homes as often as they would like. This rises
+                        to over two in five (43%) among those with medical conditions requiring frequent
+                        toilet use.
+                    </blockquote>
+                    <a class="text-end w-100 d-block"
+                        href="https://www.rsph.org.uk/static/uploaded/459f4802-ae43-40b8-b5a006f6ead373e6.pdf">2018
+                        Survey - Royal Society For Public Health</a>
                 </div>
             </section>
 
-            <section class="cta section pt-48">
-                <div class="container">
-                    <div class="cta-inner section-inner" id="contact">
-                        <h2 class="section-title mt-0">Contact us to find out more or get involved</h2>
-                        <p>We would love to hear from you - whether you'd like to submit an app feature request, toilet
-                            dataset, a collaboration idea or you're just curious and want to find out more.</p>
-                        <div class="container">
-                            <form name="contact" method="POST" data-netlify="true" class="form">
-                                <p>
-                                    <label>Name: <input type="text" name="name" class="input" /></label>
-                                </p>
-                                <p>
-                                    <label>Your Email: <input type="email" name="email" class="input" /></label>
-                                </p>
-                                <p>
-                                    <label for="type">I want to...</label>
-                                    <select id="type" name="type">
-                                        <option value="more">Find out more</option>
-                                        <option value="submit_data">Submit a toilet dataset</option>
+            <div class="bg-md-light mx-2 my-md-5 py-4" id="contact">
+                <section class="my-2 my-md-4 form-card py-4">
+                    <div class="card p-md-5">
+                        <div class="card-header">
+                            <h3><i class="fas fa-toilet h2-md"></i> Join the revo-loo-tion!</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-title">We would love to hear from you, whether you're a business looking to
+                                sign
+                                up to the toilet scheme, a community group, council, app user or anyone else looking to
+                                find
+                                out more.</p>
+                            <form name="contact" method="POST" data-netlify="true" class="mt-4">
+                                <input type='hidden' name='form-name' value='contact' />
+                                <div class="form-outline mb-4">
+                                    <input type="text" id="name" class="form-control" name="name" />
+                                    <label class="form-label" for="name">Name</label>
+                                </div>
+                                <div class="form-outline mb-4">
+                                    <input type="email" id="email" class="form-control" name="email" required />
+                                    <label class="form-label" for="email">Email address</label>
+                                </div>
+                                <div class="form-outline mb-4">
+                                    <textarea class="form-control" id="message" rows="4" name="message"></textarea>
+                                    <label class="form-label" for="message">Message</label>
+                                </div>
+                                <div class="form-outline mb-4">
+                                    <label for="type" class="me-2">I want to...</label>
+                                    <select id="type" name="type" class="p-1">
+                                        <option value="join">Join the Toilet Scheme!</option>
+                                        <option value="submit_data">Contribute toilet data</option>
                                         <option value="request_feature">Request an app feature</option>
-                                        <option value="volunteer">Volunteer at Toilets4London</option>
-                                        <option value="other">Other</option>
+                                        <option value="other">Find out more</option>
+                                        <option value="other">Anything else!</option>
                                     </select>
-                                </p>
-                                <p>
-                                    <label>Message: <textarea name="message" class="textarea"></textarea></label>
-                                </p>
-                                <p>
-                                    <button class="button button-primary button-wide-mobile">Send</button>
-                                </p>
+                                </div>
                             </form>
-                        </div>
-                        <div class="container">
-                            <h3>Be the first to get the latest Toilets4London app features</h3>
-                            <p>As a Beta tester you get to test early pre-release versions of the app and give us feedback that will shape the next app release!</p>
-                            <ul>
-                                <li><a href="https://testflight.apple.com/join/L6yHTP19">Become a Beta tester for the iOS app</a></li>
-                                <li><a href="https://play.google.com/apps/testing/com.toilets4london.toiletapp">Become a Beta tester for the Android app</a></li>
-                            </ul>
+                            <button type="submit" class="btn btn-danger btn-block">Get in touch!</button>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section class="section pt-24">
-                <div class="container supporters is-revealing">
-                    <p>Thank you to our supporters</p>
-                    <img src="dist/images/supporters_white.svg" alt="Toilets4London's supporters include the Mayor's Fund for London, the Citi Foundation and Imperial Entreprise Lab">
+                </section>
+            </div>
+            <section>
+                <div data-aos="fade-up p-2 p-md-4 mb-4">
+                    <p class="text-center">Proudly supported by</p>
+                    <img src="dist/images/supporters_colour.svg" class="mx-auto support-img"
+                        alt="Toilets4London's supporters include the Mayor's Fund for London, the Citi Foundation and Imperial Entreprise Lab">
                 </div>
             </section>
         </main>
 
-        <footer class="site-footer">
-            <div class="container">
-                <div class="site-footer-inner">
-                    <div class="brand footer-brand">
-                        <a href="#">
-                            <img class="header-logo-image" src="dist/images/logo.svg" alt="Toilets4London logo">
-                        </a>
-                    </div>
-                    <ul class="footer-social-links list-reset">
-                        <li>
-                            <a href="https://www.instagram.com/toilets4london/">
-                                <span class="screen-reader-text">Instagram</span>
-                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill="#5ab9ea">
-                                    <path
-                                        d="M11 0H5a5 5 0 0 0-5 5v6a5 5 0 0 0 5 5h6a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zm3.5 11c0 1.93-1.57 3.5-3.5 3.5H5c-1.93 0-3.5-1.57-3.5-3.5V5c0-1.93 1.57-3.5 3.5-3.5h6c1.93 0 3.5 1.57 3.5 3.5v6z" />
-                                    <path
-                                        d="M8 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm0 6.5A2.503 2.503 0 0 1 5.5 8c0-1.379 1.122-2.5 2.5-2.5s2.5 1.121 2.5 2.5c0 1.378-1.122 2.5-2.5 2.5z" />
-                                    <circle cx="12.3" cy="3.7" r="0.533" />
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/company/68527657/">
-                                <span class="screen-reader-text">LinkedIn</span>
-                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill="#5ab9ea">
-                                    <path d="M0 5h3.578v11H0z" />
-                                    <path
-                                        d="M13.324 5.129c-.038-.012-.074-.025-.114-.036a2.32 2.32 0 0 0-.145-.028A3.207 3.207 0 0 0 12.423 5c-2.086 0-3.409 1.517-3.845 2.103V5H5v11h3.578v-6s2.704-3.766 3.845-1v7H16V8.577a3.568 3.568 0 0 0-2.676-3.448z" />
-                                    <circle cx="1.75" cy="1.75" r="1.75" />
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/t4london/">
-                                <span class="screen-reader-text">Facebook</span>
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0)">
-                                        <path
-                                            d="M15.1167 0H0.883333C0.395333 0 0 0.395333 0 0.883333V15.1173C0 15.6047 0.395333 16 0.883333 16H8.54667V9.804H6.46133V7.38933H8.54667V5.60867C8.54667 3.542 9.80867 2.41667 11.6527 2.41667C12.536 2.41667 13.2947 2.48267 13.516 2.512V4.672L12.2373 4.67267C11.2347 4.67267 11.0407 5.14933 11.0407 5.848V7.39H13.432L13.1207 9.80467H11.0407V16H15.118C15.6047 16 16 15.6047 16 15.1167V0.883333C16 0.395333 15.6047 0 15.1167 0V0Z"
-                                            fill="#5ab9ea" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0">
-                                            <rect width="16" height="16" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/toilets4london">
-                                <span class="screen-reader-text">GitHub</span>
-                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill="#5ab9ea">
-                                    <path
-                                        d="M7.999 0C3.582 0 0 3.596 0 8.032a8.031 8.031 0 0 0 5.472 7.621c.4.074.546-.174.546-.387 0-.191-.007-.696-.011-1.366-2.225.485-2.695-1.077-2.695-1.077-.363-.928-.888-1.175-.888-1.175-.727-.498.054-.488.054-.488.803.057 1.225.828 1.225.828.714 1.227 1.873.873 2.329.667.072-.519.279-.873.508-1.074-1.776-.203-3.644-.892-3.644-3.969 0-.877.312-1.594.824-2.156-.083-.203-.357-1.02.078-2.125 0 0 .672-.216 2.2.823a7.633 7.633 0 0 1 2.003-.27 7.65 7.65 0 0 1 2.003.271c1.527-1.039 2.198-.823 2.198-.823.436 1.106.162 1.922.08 2.125.513.562.822 1.279.822 2.156 0 3.085-1.87 3.764-3.652 3.963.287.248.543.738.543 1.487 0 1.074-.01 1.94-.01 2.203 0 .215.144.465.55.386A8.032 8.032 0 0 0 16 8.032C16 3.596 12.418 0 7.999 0z" />
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="footer-copyright"><a href="https://openurban.org.uk/">&copy; 2020 Openurban CIC, all rights reserved</a></div>
-                    <div class="footer-privacy"><a href="/privacy.html">Privacy policy</a></div>
-                    <div class="footer-legal">Google Play and the Google Play logo are trademarks of Google LLC.</div>
-                </div>
+        <footer class="text-center mt-4">
+            <div class="container p-2">
+                <section class="mb-4">
+                    <a href="https://www.instagram.com/toilets4london/"
+                        class="btn btn-outline-dark btn-floating m-1 btn-insta">
+                        <i class="fab fa-instagram fa-lg"></i>
+                    </a>
+                    <a href="https://twitter.com/toilets4london"
+                        class="btn btn-outline-dark btn-floating m-1 btn-twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/68527657/"
+                        class="btn btn-outline-dark btn-floating m-1 btn-linkedin">
+                        <i class="fab fa-linkedin-in fa-lg"></i>
+                    </a>
+                    <a href="https://www.facebook.com/t4london/"
+                        class="btn btn-outline-dark btn-floating m-1 btn-facebook">
+                        <i class="fab fa-facebook-f fa-lg"></i>
+                    </a>
+                    <a href="https://github.com/toilets4london"
+                        class="btn btn-outline-dark btn-floating m-1 btn-github">
+                        <i class="fab fa-github fa-lg"></i>
+                    </a>
+                </section>
+                <section class="mb-2" style="font-size: small;">
+                    See our privacy policy <a href="/privacy.html">here</a>. Google Play and the Google Play logo are
+                    trademarks of Google LLC. This site uses icons from <a href="https://fontawesome.com/">Font
+                        Awesome</a>.
+                </section>
+            </div>
+            <div class="text-center p-3 bg-light">
+                © 2020 Copyright <a class="text-primary" href="https://openurban.org.uk/">OpenUrban CIC</a>
             </div>
         </footer>
     </div>
 
-    <script src="dist/js/main.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
+    <!-- <script src="dist/js/main.min.js"></script> -->
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
