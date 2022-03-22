@@ -45,13 +45,13 @@
                 <div class="p-3 p-md-5 text-left my-4 bg-md-light">
                     <div class="row">
                         <div class="col-lg-6">
-                            <h1 class="mb-4 h2">Toilets4London is improving access to toilets in London using technology
-                                and open data</h1>
+                            <h1 class="mb-4 h2">Toilets4London a mobile app and city-wide scheme improving public access
+                                to toilet facilities across London.</h1>
                             <h2 class="mb-4 h5 text-primary"><i class="fas fa-award me-1"></i> Winner of 2020 Mayor's
                                 Entrepreneur Tech Award</h2>
                             <div class="d-block">
-                                <a class="btn btn-primary mb-4 btn-lg btn-rounded" href="#contact" role="button">Get
-                                    involved!</a>
+                                <a class="btn btn-primary mb-4 btn-lg btn-rounded" href="#contact" role="button">Appear
+                                    on the app today!</a>
                             </div>
                             <a href="https://apps.apple.com/us/app/toilets4london/id1543000174"><img
                                     src="dist/images/ios-app-store-badge.svg" alt="Download on the app store"
@@ -104,8 +104,7 @@
                                     toilets, nothing changes for you, while Toilets4London works behind the scenes to
                                     turn your data into a user-friendly useful mobile app. <a href="#contact">Get in
                                         touch with us today</a> if you'd like us to pull data from your website, or any
-                                    other source (google sheets/maps, excel etc.)! We also provide community toilet
-                                    scheme managers with metrics on toilet ratings and reports submitted by app users.
+                                    other source. We can also provide community toilet scheme managers with metrics on toilet ratings and reports submitted by app users.
                                 </p>
                             </div>
                         </div>
@@ -119,7 +118,7 @@
                             <div class="card-body">
                                 <p>Toilets4London collects data on accessibility,
                                     opening hours, baby change facilities and more so that you know exactly what is
-                                    available. We regularly re-scrape and refresh the data, relying on
+                                    available. We regularly refresh the data, relying on
                                     direct links with facility providers, which means more
                                     up-to-date and accurate info for our users!</p>
                             </div>
@@ -137,7 +136,8 @@
                                     helps when
                                     it’s most needed. Businesses can <a href="#contact">join the Toilets4London toilet
                                         scheme</a> and appear on our app
-                                    today.</p>
+                                    today. We can also send you an optional free sticker to display so that passers-by
+                                    know you are taking part!</p>
                             </div>
                         </div>
                     </div>
@@ -161,37 +161,41 @@
                 </div>
             </section>
 
+            <img src="dist/images/sticker.png" width="200" height="200" class="sticker-sm" />
+
             <div class="bg-md-light mx-2 my-md-5 py-4" id="contact">
                 <section class="my-2 my-md-4 form-card py-4">
                     <div class="card p-md-5">
                         <div class="card-header pt-4 sm:pt-0">
-                            <h3><i class="fas fa-toilet h2-md"></i> Join the revo-loo-tion!</h3>
+                            <h3>Join the toilet scheme and make a difference in your community!</h3>
                         </div>
                         <div class="card-body">
-                            <p class="card-title">We would love to hear from you, whether you're a business looking to
-                                sign
-                                up to the toilet scheme, a community group, council, app user or anyone else looking to
-                                find
-                                out more.</p>
+                            <p class="card-title">If you're a London-based business, get in touch and appear on the
+                                Toilets4London app today!</p>
+                            <img src="dist/images/sticker.png" width="200" height="200" class="sticker-lg" />
                             <form name="contact" method="POST" data-netlify="true" class="mt-4">
                                 <input type='hidden' name='form-name' value='contact' />
                                 <div class="form-outline mb-4">
                                     <input type="text" id="name" class="form-control" name="name" />
-                                    <label class="form-label" for="name">Name</label>
+                                    <label class="form-label" for="name">Your name / the business' name</label>
                                 </div>
                                 <div class="form-outline mb-4">
                                     <input type="email" id="email" class="form-control" name="email" required />
-                                    <label class="form-label" for="email">Email address</label>
+                                    <label class="form-label" for="email">Email address for further contact</label>
                                 </div>
+                                <p class="mb-4">If you are providing information about a toilet, please let us know if
+                                    there are baby change facilities available, whether a toilet is wheelchair
+                                    accessible, the full address / detailed location, and your opening hours. Thank you!
+                                </p>
                                 <div class="form-outline mb-4">
                                     <textarea class="form-control" id="message" rows="4" name="message"></textarea>
-                                    <label class="form-label" for="message">Message</label>
+                                    <label class="form-label" for="message">Information about your facilities</label>
                                 </div>
                                 <div class="form-outline mb-4">
                                     <label for="type" class="me-2">I want to...</label>
                                     <select id="type" name="type" class="p-1">
                                         <option value="join">Join the Toilet Scheme!</option>
-                                        <option value="submit_data">Contribute toilet data</option>
+                                        <option value="submit_data">Contribute data on existing facilities</option>
                                         <option value="request_feature">Request an app feature</option>
                                         <option value="other">Find out more</option>
                                         <option value="other">Anything else!</option>

@@ -69,3 +69,22 @@
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(0,122,255,1) 140%);
 }
+
+
+.sticker-lg {
+    position: absolute;
+    display: none;
+    @media (min-width: 1000px) { 
+        display: block;
+        top: 90%;
+        left: 90%;
+    }
+}
+
+.sticker-sm {
+    display: block;
+    margin: 10px auto;
+    @media (min-width: 1000px) { 
+        display: none;
+    }
+}
